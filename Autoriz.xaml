@@ -1,0 +1,32 @@
+﻿<Page x:Class="WpfApp4.Pages.Autoriz"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp4.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Autoriz">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="77*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="150*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TBoxLogin" Grid.Row="2" Grid.Column="1" Margin="20,10"></TextBox>
+        <TextBox x:Name="TBoxPass" Grid.Row="2" Grid.Column="2" Margin="20,10"></TextBox>
+        <TextBlock  Text="Логин" Grid.Column="1" Margin="20,0,0,0" Grid.Row="1"/>
+        <TextBlock  Text="Пароль" Grid.Column="2" Margin="20,0,0,0" Grid.Row="1"/>
+        <Button x:Name="Bautoriz" Content="Автроризация" Grid.Column="1" Grid.Row="3" Margin="20,10" Click="Bautoriz_Click" ></Button>
+
+    </Grid>
+</Page>

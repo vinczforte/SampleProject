@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="349*"/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="myFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Source="/WpfApp4;component/Pages/Autoriz.xaml" ></Frame>
+        <Button x:Name="BBack" Content="Назад" Margin="20" Grid.Column="1" Click="BBack_Click"></Button>
+    </Grid>
+</Window>
